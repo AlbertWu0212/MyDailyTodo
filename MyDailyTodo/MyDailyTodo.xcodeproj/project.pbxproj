@@ -13,19 +13,19 @@
 		09E312631D29F25600867F27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E312621D29F25600867F27 /* Assets.xcassets */; };
 		09E312661D29F25600867F27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E312641D29F25600867F27 /* LaunchScreen.storyboard */; };
 		09E3126E1D29FD7500867F27 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E3126D1D29FD7500867F27 /* ChecklistItem.swift */; };
-		09E312701D2A062D00867F27 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E3126F1D2A062D00867F27 /* AddItemViewController.swift */; };
+		09EFD65B1D2A216F003BC39A /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E3126F1D2A062D00867F27 /* ItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09E312581D29F25600867F27 /* MyDailyTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDailyTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E3125B1D29F25600867F27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09E3125D1D29F25600867F27 /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
+		09E3125D1D29F25600867F27 /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ChecklistViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		09E312601D29F25600867F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09E312621D29F25600867F27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09E312651D29F25600867F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09E312671D29F25600867F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09E3126D1D29FD7500867F27 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
-		09E3126F1D2A062D00867F27 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		09E3126F1D2A062D00867F27 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ItemDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,9 @@
 				09E3125A1D29F25600867F27 /* MyDailyTodo */,
 				09E312591D29F25600867F27 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		09E312591D29F25600867F27 /* Products */ = {
 			isa = PBXGroup;
@@ -61,7 +63,7 @@
 				09E3125B1D29F25600867F27 /* AppDelegate.swift */,
 				09E3125D1D29F25600867F27 /* ChecklistViewController.swift */,
 				09E3126D1D29FD7500867F27 /* ChecklistItem.swift */,
-				09E3126F1D2A062D00867F27 /* AddItemViewController.swift */,
+				09E3126F1D2A062D00867F27 /* ItemDetailViewController.swift */,
 				09E3125F1D29F25600867F27 /* Main.storyboard */,
 				09E312621D29F25600867F27 /* Assets.xcassets */,
 				09E312641D29F25600867F27 /* LaunchScreen.storyboard */,
@@ -142,8 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E3125E1D29F25600867F27 /* ChecklistViewController.swift in Sources */,
-				09E312701D2A062D00867F27 /* AddItemViewController.swift in Sources */,
 				09E3126E1D29FD7500867F27 /* ChecklistItem.swift in Sources */,
+				09EFD65B1D2A216F003BC39A /* ItemDetailViewController.swift in Sources */,
 				09E3125C1D29F25600867F27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +296,7 @@
 				09E3126C1D29F25600867F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
