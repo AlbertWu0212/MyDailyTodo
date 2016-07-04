@@ -20,6 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let navigationController = window!.rootViewController as! UINavigationController
     let controller = navigationController.viewControllers[0] as! AllListsViewController
     controller.dataModel = dataModel
+    
+    let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Sound, .Badge], categories: nil)
+    UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+    
+//    let date = NSDate(timeIntervalSinceNow: 10)
+//    let localNotification = UILocalNotification()
+//    localNotification.fireDate = date
+//    localNotification.timeZone = NSTimeZone.defaultTimeZone()
+//    localNotification.alertBody = "I am a local notification!"
+//    localNotification.soundName = UILocalNotificationDefaultSoundName
+//    UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     return true
   }
 
@@ -45,6 +56,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationWillTerminate(application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     saveData()
+  }
+  
+  func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+    print("didReceiveLocalNotification \(notification)")
+    
   }
 
 

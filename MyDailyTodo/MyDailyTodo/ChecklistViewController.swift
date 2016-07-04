@@ -80,7 +80,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
   // MARK: Some private methods
   func configureTextForCell(cell: UITableViewCell, withChecklistItem item: ChecklistItem) {
     let label = cell.viewWithTag(tagForTextLabelInCell) as! UILabel
-    label.text = item.text
+    label.text = "\(item.itemID): \(item.text)"
   }
   
   func configureCheckmarkForCell(cell: UITableViewCell, withChecklistItem item: ChecklistItem) {
