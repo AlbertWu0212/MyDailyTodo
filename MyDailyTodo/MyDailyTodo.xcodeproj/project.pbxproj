@@ -14,6 +14,10 @@
 		09E312661D29F25600867F27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E312641D29F25600867F27 /* LaunchScreen.storyboard */; };
 		09E3126E1D29FD7500867F27 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E3126D1D29FD7500867F27 /* ChecklistItem.swift */; };
 		09EFD65B1D2A216F003BC39A /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E3126F1D2A062D00867F27 /* ItemDetailViewController.swift */; };
+		09EFD65D1D2A29B0003BC39A /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EFD65C1D2A29B0003BC39A /* AllListsViewController.swift */; };
+		09EFD65F1D2A30E4003BC39A /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EFD65E1D2A30E4003BC39A /* Checklist.swift */; };
+		09EFD6611D2A3464003BC39A /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EFD6601D2A3464003BC39A /* ListDetailViewController.swift */; };
+		09EFD6631D2A421D003BC39A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EFD6621D2A421D003BC39A /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		09E312671D29F25600867F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09E3126D1D29FD7500867F27 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		09E3126F1D2A062D00867F27 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ItemDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		09EFD65C1D2A29B0003BC39A /* AllListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllListsViewController.swift; path = ../AllListsViewController.swift; sourceTree = "<group>"; };
+		09EFD65E1D2A30E4003BC39A /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		09EFD6601D2A3464003BC39A /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
+		09EFD6621D2A421D003BC39A /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +53,9 @@
 				09E3125A1D29F25600867F27 /* MyDailyTodo */,
 				09E312591D29F25600867F27 /* Products */,
 			);
-			indentWidth = 4;
+			indentWidth = 2;
 			sourceTree = "<group>";
-			tabWidth = 4;
+			tabWidth = 2;
 		};
 		09E312591D29F25600867F27 /* Products */ = {
 			isa = PBXGroup;
@@ -64,6 +72,10 @@
 				09E3125D1D29F25600867F27 /* ChecklistViewController.swift */,
 				09E3126D1D29FD7500867F27 /* ChecklistItem.swift */,
 				09E3126F1D2A062D00867F27 /* ItemDetailViewController.swift */,
+				09EFD65C1D2A29B0003BC39A /* AllListsViewController.swift */,
+				09EFD65E1D2A30E4003BC39A /* Checklist.swift */,
+				09EFD6601D2A3464003BC39A /* ListDetailViewController.swift */,
+				09EFD6621D2A421D003BC39A /* DataModel.swift */,
 				09E3125F1D29F25600867F27 /* Main.storyboard */,
 				09E312621D29F25600867F27 /* Assets.xcassets */,
 				09E312641D29F25600867F27 /* LaunchScreen.storyboard */,
@@ -144,8 +156,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E3125E1D29F25600867F27 /* ChecklistViewController.swift in Sources */,
+				09EFD6611D2A3464003BC39A /* ListDetailViewController.swift in Sources */,
 				09E3126E1D29FD7500867F27 /* ChecklistItem.swift in Sources */,
+				09EFD65F1D2A30E4003BC39A /* Checklist.swift in Sources */,
 				09EFD65B1D2A216F003BC39A /* ItemDetailViewController.swift in Sources */,
+				09EFD6631D2A421D003BC39A /* DataModel.swift in Sources */,
+				09EFD65D1D2A29B0003BC39A /* AllListsViewController.swift in Sources */,
 				09E3125C1D29F25600867F27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
