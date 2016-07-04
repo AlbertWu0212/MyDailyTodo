@@ -1,19 +1,18 @@
 //
 //  ChecklistItem.swift
-//  MyDailyTodo
+//  Checklists
 //
-//  Created by WuZhengBin on 16/7/4.
-//  Copyright © 2016年 WuZhengBin. All rights reserved.
+//  Created by M.I. Hollemans on 27/07/15.
+//  Copyright © 2015 Razeware. All rights reserved.
 //
 
 import Foundation
 
 class ChecklistItem: NSObject {
-    
-    var text = ""
-    var checked = false
-    
-    func toggleChecked() {
-        checked = !checked
-    }
+  var text = ""
+  var checked = false
+  
+  func toggleChecked() {
+    checked = !checked
+  }
 }

@@ -1,159 +1,174 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="laE-vL-Q6P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VXF-xQ-21q">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Checklists-->
-        <scene sceneID="njm-tl-UWe">
+        <scene sceneID="971-vq-dVi">
             <objects>
-                <tableViewController id="RTs-DW-Rqh" customClass="ChecklistViewController" customModule="MyDailyTodo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="axB-MB-UlU">
+                <tableViewController id="o0h-WU-ec0" customClass="ChecklistViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="N7K-ls-rAO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="CheckListItem" id="0ev-lE-hMJ">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ChecklistItem" id="RCF-Rx-KdV">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ev-lE-hMJ" id="O8F-f3-NRM">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RCF-Rx-KdV" id="cOL-e4-1i9">
                                     <rect key="frame" x="0.0" y="0.0" width="533" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="✓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJt-4X-8V8">
-                                            <rect key="frame" x="8" y="10" width="19" height="24"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXS-WM-5Ik">
-                                            <rect key="frame" x="35" y="11" width="490" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXh-xZ-VTn">
+                                            <rect key="frame" x="36" y="11" width="489" height="21"/>
+                                            <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="√" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujj-40-mI0">
+                                            <rect key="frame" x="15" y="5" width="13" height="27"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <animations/>
                                 </tableViewCellContentView>
+                                <animations/>
                                 <connections>
-                                    <segue destination="1iy-Jd-dd7" kind="presentation" identifier="EditItemSegue" trigger="accessoryAction" id="0pj-8A-fx0"/>
+                                    <segue destination="uY3-Io-kHR" kind="presentation" identifier="EditItem" trigger="accessoryAction" id="fCC-XB-wAU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="RTs-DW-Rqh" id="XEQ-Zf-hRf"/>
-                            <outlet property="delegate" destination="RTs-DW-Rqh" id="vSh-oT-Ajj"/>
+                            <outlet property="dataSource" destination="o0h-WU-ec0" id="hPG-Bg-kur"/>
+                            <outlet property="delegate" destination="o0h-WU-ec0" id="869-ad-CBc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Checklists" id="BV2-U6-1f4">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yVu-lW-vlD">
+                    <navigationItem key="navigationItem" title="Checklists" id="07I-7K-Q55">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="i7U-Ya-IC3">
                             <connections>
-                                <segue destination="1iy-Jd-dd7" kind="presentation" identifier="AddItemSegue" id="Arf-I4-U0a"/>
+                                <segue destination="uY3-Io-kHR" kind="presentation" identifier="AddItem" id="n03-qk-jAf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LOB-Km-Io1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pyh-2F-fOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="722" y="344"/>
+            <point key="canvasLocation" x="1374" y="407"/>
         </scene>
         <!--Add Item-->
-        <scene sceneID="fC3-j8-pRd">
+        <scene sceneID="78K-u7-14Y">
             <objects>
-                <tableViewController id="WgN-d4-f78" customClass="ItemDetailViewController" customModule="MyDailyTodo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="C6o-zV-yQJ">
+                <tableViewController id="RTf-a0-RQw" customClass="ItemDetailViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="tvU-2d-mC2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection id="VWx-pa-V6c">
+                            <tableViewSection id="aHy-ad-yju">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="M9p-ke-ZFP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="jyP-1D-TtP">
                                         <rect key="frame" x="0.0" y="99" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M9p-ke-ZFP" id="tdh-K5-Xg7">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jyP-1D-TtP" id="5I0-hf-m7U">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the Item" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rAE-NX-Abv">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the Item" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KMn-Uj-6UN">
                                                     <rect key="frame" x="8" y="7" width="584" height="30"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     <connections>
-                                                        <action selector="done" destination="WgN-d4-f78" eventType="editingDidEndOnExit" id="DIY-QG-riG"/>
-                                                        <outlet property="delegate" destination="WgN-d4-f78" id="FgT-zH-PJH"/>
+                                                        <action selector="done" destination="RTf-a0-RQw" eventType="editingDidEndOnExit" id="Zk3-Lx-vMf"/>
+                                                        <outlet property="delegate" destination="RTf-a0-RQw" id="DAm-6X-20E"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
                         <connections>
-                            <outlet property="dataSource" destination="WgN-d4-f78" id="1ow-FP-BgZ"/>
-                            <outlet property="delegate" destination="WgN-d4-f78" id="rgr-if-6eM"/>
+                            <outlet property="dataSource" destination="RTf-a0-RQw" id="a49-79-5dO"/>
+                            <outlet property="delegate" destination="RTf-a0-RQw" id="Qw6-P0-jty"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Add Item" id="RcI-IY-2d0">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3O5-HF-6qJ">
+                    <navigationItem key="navigationItem" title="Add Item" id="7lU-fS-4d2">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="OYU-kd-rJI">
                             <connections>
-                                <action selector="cancel" destination="WgN-d4-f78" id="9Am-kw-bi3"/>
+                                <action selector="cancel" destination="RTf-a0-RQw" id="PuY-ji-ayq"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="UDh-Qn-Dv2">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="done" id="jAg-M3-9bk">
                             <connections>
-                                <action selector="done" destination="WgN-d4-f78" id="6aN-ad-z5B"/>
+                                <action selector="done" destination="RTf-a0-RQw" id="OpL-Tb-f3A"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="doneButton" destination="UDh-Qn-Dv2" id="urb-ZI-MWM"/>
-                        <outlet property="textField" destination="rAE-NX-Abv" id="0ha-oM-Slb"/>
+                        <outlet property="doneBarButton" destination="jAg-M3-9bk" id="voU-G3-gZw"/>
+                        <outlet property="textField" destination="KMn-Uj-6UN" id="zsU-Fm-yyn"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mX4-T4-AKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1Y-GH-8ao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2331" y="344"/>
+            <point key="canvasLocation" x="2929" y="407"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="eX6-ub-cW1">
+        <scene sceneID="KvC-kT-Nvt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="laE-vL-Q6P" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VXF-xQ-21q" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vLk-pv-0nl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8ax-VS-fHc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="RTs-DW-Rqh" kind="relationship" relationship="rootViewController" id="A27-hT-KZp"/>
+                        <segue destination="o0h-WU-ec0" kind="relationship" relationship="rootViewController" id="e6d-DO-aTG"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uAV-gG-rDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wru-8A-k5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="344"/>
+            <point key="canvasLocation" x="608" y="407"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="65Y-50-uKG">
+        <scene sceneID="1zq-D0-QqF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1iy-Jd-dd7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uY3-Io-kHR" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0JK-cq-o5c">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FX5-3N-GXv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="WgN-d4-f78" kind="relationship" relationship="rootViewController" id="tdW-Hv-6fN"/>
+                        <segue destination="RTf-a0-RQw" kind="relationship" relationship="rootViewController" id="QsN-xv-rK7"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vJd-on-WVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNw-Lg-Yia" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1519" y="344"/>
+            <point key="canvasLocation" x="2117" y="407"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0pj-8A-fx0"/>
+        <segue reference="fCC-XB-wAU"/>
     </inferredMetricsTieBreakers>
 </document>
