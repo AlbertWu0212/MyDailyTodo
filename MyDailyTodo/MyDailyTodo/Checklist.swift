@@ -15,6 +15,7 @@ class Checklist: NSObject, NSCoding {
   var iconName: String
   var items = [ChecklistItem]()
   
+  // MARK: NSCoding protocol
   required init?(coder aDecoder: NSCoder) {
     name = aDecoder.decodeObjectForKey("Name") as! String
     items = aDecoder.decodeObjectForKey("Items") as! [ChecklistItem]
@@ -29,6 +30,7 @@ class Checklist: NSObject, NSCoding {
     aCoder.encodeObject(iconName, forKey: "IconName")
   }
   
+  // MARK: initial
   convenience init(name: String) {
     self.init(name: name, iconName: "No Icon")
   }
@@ -39,6 +41,7 @@ class Checklist: NSObject, NSCoding {
     super.init()
   }
   
+  // MARK: API Methods
   func countUncheckedItems() -> Int {
     var count = 0
     for item in items where !item.checked {

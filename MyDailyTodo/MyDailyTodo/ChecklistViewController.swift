@@ -12,18 +12,9 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
   
   let tagForTextLabelInCell = 1000
   let tagForCheckmarkLabelInCell = 1001
-  
   let cellIdentifier = "ChecklistItem"
   
-//  var items: [ChecklistItem]
   var checklist: Checklist!
-
-//  // MARK: initialize
-//  required init?(coder aDecoder: NSCoder) {
-//    items = [ChecklistItem]()
-//    super.init(coder: aDecoder)
-////    loadChecklistItems()
-//  }
   
   // MARK: View life cycle
   override func viewDidLoad() {
@@ -63,8 +54,6 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
       configureCheckmarkForCell(cell, withChecklistItem: item)
     }
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    
-//    saveChecklistItems()
   }
   
   override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle,forRowAtIndexPath indexPath: NSIndexPath) {
@@ -73,8 +62,6 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     
     let indexPaths = [indexPath]
     tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
-    
-//    saveChecklistItems()
   }
   
   // MARK: Some private methods
@@ -109,8 +96,6 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
     
     dismissViewControllerAnimated(true, completion: nil)
-    
-//    saveChecklistItems()
   }
   
   func itemDetailViewController(controller: ItemDetailViewController, didFinishEditingItem item: ChecklistItem) {
@@ -121,8 +106,6 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
       }
     }
     dismissViewControllerAnimated(true, completion: nil)
-    
-//    saveChecklistItems()
   }
   
   // MARK: Segue

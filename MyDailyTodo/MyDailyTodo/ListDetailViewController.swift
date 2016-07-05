@@ -21,11 +21,10 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate, Icon
   @IBOutlet weak var iconImageView: UIImageView!
   
   var iconName = "Folder"
-  
   weak var delegate: ListDetailViewControllerDelegate?
-  
   var checklistToEdit: Checklist?
   
+  // MARK: View Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -43,9 +42,9 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate, Icon
     super.viewWillAppear(animated)
     
     textField.becomeFirstResponder()
-    
   }
   
+  // MARK: IBActions
   @IBAction func cancel() {
     delegate?.listDetailViewControllerDidCancel(self)
   }
@@ -61,6 +60,7 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate, Icon
     }
   }
   
+  // MARK: TableView Datasource & Delegate
   override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
     if indexPath.section == 1 {
       return indexPath
@@ -69,6 +69,7 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate, Icon
     }
   }
   
+  // MARK: TextField Delegate
   func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
     let oldText: NSString = textField.text!
     let newText: NSString = oldText.stringByReplacingCharactersInRange(range, withString: string)
@@ -76,6 +77,7 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate, Icon
     return true
   }
   
+  // MARK: Segue
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "PickIcon" {
       let controller = segue.destinationViewController as! IconPickerViewController
@@ -83,6 +85,7 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate, Icon
     }
   }
   
+  // MARK: IconPickerController delegate
   func iconPicker(picker: IconPickerViewController, didPickIcon iconName: String) {
     self.iconName = iconName
     iconImageView.image = UIImage(named: iconName)

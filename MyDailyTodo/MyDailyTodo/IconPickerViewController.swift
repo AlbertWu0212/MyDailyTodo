@@ -26,6 +26,7 @@ class IconPickerViewController: UITableViewController {
                 "Photos",
                 "Trips" ]
   
+  // MARK: View Life Cycle
   override func viewDidLoad() {
       super.viewDidLoad()
 

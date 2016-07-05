@@ -9,6 +9,7 @@
 import Foundation
 
 class DataModel {
+  
   var lists = [Checklist]()
   var indexOfSelectedChecklist: Int {
     get {
@@ -29,7 +30,6 @@ class DataModel {
   func dataFilePath() -> String {
     let directory = documentsDirectory() as NSString
     return directory.stringByAppendingPathComponent("Checklists.plist")
-    //    return (documentsDirectory() as NSString).stringByAppendingPathComponent("Checklists.plist")
   }
   
   func saveChecklists() {
