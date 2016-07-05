@@ -115,11 +115,13 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     }
   }
   
-  override func tableView(tableView: UITableView, var indentationLevelForRowAtIndexPath indexPath: NSIndexPath) -> Int {
+  override func tableView(tableView: UITableView, indentationLevelForRowAtIndexPath indexPath: NSIndexPath) -> Int {
+    
+    var localIndexPath = indexPath
     if indexPath.section == 1 && indexPath.row == 2 {
-      indexPath = NSIndexPath(forRow: 0, inSection: indexPath.section)
+      localIndexPath = NSIndexPath(forRow: 0, inSection: indexPath.section)
     }
-    return super.tableView(tableView, indentationLevelForRowAtIndexPath: indexPath)
+    return super.tableView(tableView, indentationLevelForRowAtIndexPath: localIndexPath)
   }
   
   func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
